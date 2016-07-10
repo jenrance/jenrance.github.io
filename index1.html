@@ -1,12 +1,13 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>VisitingSeattle</title>
+      <title>My City Is Flithy</title>
       <style>
         .blue {
           color:white;
-          margin-right:20px;
-          background-color:black;
+          background-color:blue;
+          width:100px;
+          margin: 0 auto;
         }
         li {
           list-style: none;
@@ -19,12 +20,13 @@
           color:white;
           background-color:black;
         }
-        h1 {
+        header {
           color:white;
           background-color: black
         }
         div {
           display:inline-block;
+          margin:20px;
         }
         body {
         width:800px;
@@ -33,6 +35,12 @@
         }
         #myid {
         width:100%;
+        }
+        ul{
+          padding:0;
+        }
+        #imageid {
+        width: 400px;
         }
       </style>
     </head>
@@ -48,19 +56,19 @@
       <nav>
         <ul>
           <div>
-            <li><span class='blue'>Events</span></li>
+            <li class='blue'><strong>Events</strong></li>
             <ul>
-              <li>Leavenworth Oktoberfest</li>
+              <li>Oktoberfest</li>
               <li>Seattle Arts Museum</li>
-              <li>Woodinville Wine Tasting/Tours</li>
-              <li><a href="http://www.thestranger.com/events/">Seattle Live Events Calendar</a></li>
+              <li>Woodinville Wine Tasting</li>
+              <li><a href="http://www.thestranger.com/events/">Seattle Live Events</a></li>
             </ul>
           </div>
           <div>
             <li class='blue'><strong>Food</strong></li>
             <ul>
-              <li>Best Restaurants in the City</li>
-              <li>Happy Hour Restuarants</li>
+              <li>Best Restaurants</li>
+              <li>Happy Hour Spots</li>
               <li>Seattle Food Trucks</li>
               <li>Sunday Brunch</li>
             </ul>
@@ -68,16 +76,16 @@
           <div>
             <li class='blue'><strong>Outdoor Activities</strong></li>
             <ul>
-              <li>San Juan Islands Whale Watching</li>
+              <li><a href="https://www.theoutbound.com/scott_kranz/8-amazing-spring-hikes-near-seattle">Hikes Near Seattle</a></li>
               <li>Mt. Rainier Tour</li>
               <li><a href="https://www.ste-michelle.com/visit-us/summer-concerts">Winery Concerts</a></li>
-              <li><a href="https://www.theoutbound.com/scott_kranz/8-amazing-spring-hikes-near-seattle">8 Amazing Hikes Near Seattle</a></li>
+              <li>Whale Watching</li>
             </ul>
           </div>
           <div>
             <li class='blue'><strong>Sports</strong></li>
             <ul>
-              <li>Mariners</li>
+              <li><a href='http://seattle.mariners.mlb.com/index.jsp?c_id=sea'>Mariners</a></li>
               <li><a href="http://www.soundersfc.com">Sounders FC</a></li>
               <li><a href="http://www.seahawks.com">Seahawks</a></li>
               <li><a href="http://storm.wnba.com/">Seattle Storm</a></li>
@@ -86,10 +94,19 @@
         </ul>
       </nav>
       <main>
-        <h3>Visit Seattle's original farmers market, Pike's Place Market.</h3>
-        <img src='PikesPlace.jpg'>
-        <article>Attend a seasonal cooking demo, hands-on cooking class or pop-up event in the heart of Pike Place Market. Plan your visit <a href="http://pikeplacemarket.org/">here</a>.</article>
-        <img src='Fruit.jpg'>
+        <h3>Visit Pike's Place Market, "the original farmers market".</h3>
+        <a href='http://pikeplacemarket.org/'><img id='imageid' src='PikesPlace.jpg'></a>
+      </br>
+        <article>Attend a seasonal cooking demo, hands-on cooking class or </br>pop-up event in the heart of Pike Place Market.</article>
+      </br>
+        <h3>The 2016 Capitol Hill Block Party is almost here!</h3>
+        <a href='http://capitolhillblockparty.com/'><img id='imageid'src='cap.jpg'></a>
+      </br>
+      <article>Capitol Hill Block Party is a 3-day music and arts festival, </br> celebrating the iconic arts and music center, Capitol Hill.</article>
+        <h3>Check out the Garden d'Lights around the holidays! </h3>
+        <a href='http://www.gardendlights.org/'><img id='imageid'src='Botanical.jpg'></a>
+      <br/>
+      <article>Botanical Gardens features over half million lights which transform the Bellevue Botanical Garden </br> into a blossoming winter wonderland. Visitors enjoy this dazzling display each season and this year we have new </br> visitor services buildings with new amenities. The route has changed, grown, and become more magical than ever.</article>
       </main>
       <br/>
       <br/>
@@ -98,7 +115,7 @@
           <li class='navItem'>Events Calendar</li>
           <li class='navItem'>FAQ</li>
           <li class='navItem'>Contact Us</li>
-        <ul>
+        </ul>
       </footer>
     </body>
   </html>
